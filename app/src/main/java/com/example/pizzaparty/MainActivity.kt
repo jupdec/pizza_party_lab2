@@ -68,7 +68,8 @@ class MainActivity : AppCompatActivity() {
         val calc = PizzaCalculator(numAttend, hungerLevel)
         totalPizzas = calc.totalPizzas
 
-        numPizzasTextView.text = "Total pizzas: $totalPizzas"
+        val totalPizzasString = getString(R.string.total_pizzas) + " " + totalPizzas
+        numPizzasTextView.text = totalPizzasString
     }
 
     private fun displayTotal() {
